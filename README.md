@@ -54,3 +54,9 @@ docker compose up -d
 `docker compose run`や`docker compose up`では`Dockerfile`の`CMD`は無視される
 `docker container <Image>`名で起動する場合は`CMD`
 `docker compose run <コマンド>`とする場合は設定したコマンドを優先する
+
+## 少しだけ脱線
+最近はAPIとフロントエンドを分けて管理することが多いらしい。  
+どちらかの作業に集中できるほか、CI/CDの設定も楽になるとか。  
+分ける場合はAPI側だけDocker化することも多いと聞く。  
+その際は、このリポジトリのbackend側だけ切り出して使用して欲しい。
